@@ -45,7 +45,7 @@ body {
   margin: 0 auto;
   text-align: center;
 
-  /* Removed the two side lines */
+  
   border-inline: none;
 
   min-height: 100svh;

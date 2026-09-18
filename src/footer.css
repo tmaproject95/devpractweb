@@ -1,0 +1,175 @@
+.footer {
+    background-color: white;
+    border-top: 1px solid #edf0f4;
+    padding: 65px 6% 30px;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr;
+    gap: 60px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.brand-logo {
+    width: 24px;
+    height: 24px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #c43bd6, #e52b76);
+    color: white;
+
+    border-radius: 6px;
+
+    font-size: 11px;
+    font-weight: bold;
+
+    margin-right: 10px;
+}
+
+
+.footer-brand h2 {
+    display: inline-block;
+
+    margin: 0;
+
+    font-size: 20px;
+    color: #17233d;
+}
+
+
+.footer-brand h2 span {
+    color: #e72b78;
+}
+
+
+.footer-brand p {
+    margin-top: 17px;
+    margin-bottom: 24px;
+
+    color: #718096;
+
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+
+
+.social-links {
+    display: flex;
+    gap: 22px;
+}
+
+
+.social-links a {
+    text-decoration: none;
+    color: #526174;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+.social-links a:hover {
+    color: #e72b78;
+}
+
+
+
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+
+.footer-column h3 {
+    margin: 0 0 8px;
+
+    color: #172033;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.footer-column a {
+    text-decoration: none;
+
+    color: #718096;
+
+    font-size: 13px;
+}
+
+
+.footer-column a:hover {
+    color: #e72b78;
+}
+
+
+
+
+.footer-bottom {
+    max-width: 1200px;
+
+    margin: 50px auto 0;
+    padding-top: 28px;
+
+    border-top: 1px solid #edf0f4;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+.footer-bottom div {
+    display: flex;
+    gap: 25px;
+}
+
+
+.footer-bottom a {
+    text-decoration: none;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+.footer-bottom a:hover {
+    color: #e72b78;
+}

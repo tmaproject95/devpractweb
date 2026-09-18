@@ -3,6 +3,7 @@ import Navbar from "./navbar.jsx"
 import Banner from "./banner.jsx"
 import Cards from './cards.jsx'
 import Sections from './sections.jsx'
+import Footer from './footer.jsx'
 
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -101,6 +102,7 @@ function App() {
                 position="top-right"
                 autoClose={2000}
             />
+            <Footer></Footer>
 
         </div>
     )

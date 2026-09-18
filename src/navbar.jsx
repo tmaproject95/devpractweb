@@ -1,9 +1,13 @@
 import logo from "./assets/logo-text.png";
 import "./Navbar.css";
+import menu from "./assets/hamburger.png";
 
 function Navbar() {
   return (
-    <nav className="navbar">
+          <nav className="navbar">
+              <button className="menu-button">
+          <img src={menu} alt="Menu" />
+        </button>
       <div className="navbar-left">
         <img src={logo} alt="Dev Stack logo" />
    

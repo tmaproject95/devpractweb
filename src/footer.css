@@ -173,3 +173,46 @@
 .footer-bottom a:hover {
     color: #e72b78;
 }
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 40px;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding: 45px 25px 25px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+}

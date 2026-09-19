@@ -17,8 +17,6 @@ const dpromisefetch = async () => {
     return data
 }
 
-
-
 const cardspromise = dpromisefetch()
 
 
@@ -27,23 +25,12 @@ function App() {
     const [selectedStack, setSelectedStack] = useState([])
 
 
-
     const addToStack = (card) => {
-
-        const alreadyExists = selectedStack.some(
-            (item) => item.id === card.id
-        )
-
-        if (alreadyExists) {
-            toast.warning(`${card.name} is already in your stack!`)
-            return
-        }
 
         setSelectedStack([...selectedStack, card])
 
         toast.success(`${card.name} added to your stack!`)
     }
-
 
 
     const removeFromStack = (id) => {
@@ -60,7 +47,6 @@ function App() {
     }
 
 
- 
     const removeAll = () => {
 
         setSelectedStack([])
@@ -83,6 +69,7 @@ function App() {
                     <Cards
                         cardspromise={cardspromise}
                         addToStack={addToStack}
+                        selectedStack={selectedStack}
                     />
 
                 </Suspense>
@@ -97,12 +84,12 @@ function App() {
             </div>
 
 
-           
             <ToastContainer
                 position="top-right"
                 autoClose={2000}
             />
-            <Footer></Footer>
+
+            <Footer />
 
         </div>
     )

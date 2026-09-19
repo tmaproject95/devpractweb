@@ -3,70 +3,76 @@ import { use } from "react"
 import "./cards.css"
 
 
-const Cards = ({ cardspromise, addToStack }) => {
+const Cards = ({ cardspromise, addToStack, selectedStack }) => {
 
     const cards = use(cardspromise)
 
     return (
         <div className="cards-container">
 
-            {cards.map((c) => (
+            {cards.map((c) => {
 
-                <div className="card" key={c.id}>
+                const isAdded = selectedStack.some(
+                    (item) => item.id === c.id
+                )
 
-                    <div className="card-top">
+                return (
+                    <div className="card" key={c.id}>
 
-                        <img
-                            src={c.icon}
-                            alt={c.name}
-                            className="card-icon"
-                        />
+                        <div className="card-top">
 
-                        <span className="badge">
-                            {c.badge}
-                        </span>
+                            <img
+                                src={c.icon}
+                                alt={c.name}
+                                className="card-icon"
+                            />
+
+                            <span className="badge">
+                                {c.badge}
+                            </span>
+
+                        </div>
+
+
+                        <h2>{c.name}</h2>
+
+
+                        <p className="description">
+                            {c.description}
+                        </p>
+
+
+                        <div className="card-line"></div>
+
+
+                        <div className="card-info">
+
+                            <span className="category">
+                                {c.category}
+                            </span>
+
+                            <span className="difficulty">
+                                {c.difficulty}
+                            </span>
+
+                            <span className="rating">
+                                ⭐ {c.rating}
+                            </span>
+
+                        </div>
+
+
+                        <button
+                            className={`add-button ${isAdded ? "added-button" : ""}`}
+                            onClick={() => addToStack(c)}
+                            disabled={isAdded}
+                        >
+                            {isAdded ? "✓ Added to Stack" : "Add to Stack"}
+                        </button>
 
                     </div>
-
-
-                    <h2>{c.name}</h2>
-
-
-                    <p className="description">
-                        {c.description}
-                    </p>
-
-
-                    <div className="card-line"></div>
-
-
-                    <div className="card-info">
-
-                        <span className="category">
-                            {c.category}
-                        </span>
-
-                        <span className="difficulty">
-                            {c.difficulty}
-                        </span>
-
-                        <span className="rating">
-                            ⭐ {c.rating}
-                        </span>
-
-                    </div>
-
-
-                    <button
-                        className="add-button"
-                        onClick={() => addToStack(c)}
-                    >
-                        Add to Stack
-                    </button>
-
-                </div>
-
-            ))}
+                )
+            })}
 
         </div>
     )

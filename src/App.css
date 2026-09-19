@@ -3,3 +3,12 @@
     justify-content: space-between;
     align-items: flex-start;
 }
+
+@media (max-width: 900px) {
+
+    .cardnsec {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+}

@@ -95,3 +95,52 @@
 .add-button:hover {
     background: #1a2238;
 }
+.add-button:disabled {
+    cursor: not-allowed;
+}
+
+.added-button {
+    background: #ffffff;
+    color: #c33c78;
+    border: 1px solid #e8a9c2;
+}
+
+.added-button:hover {
+    background: #ffffff;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 30px;
+        gap: 20px;
+    }
+
+}
+
+
+
+@media (max-width: 650px) {
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 18px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+}

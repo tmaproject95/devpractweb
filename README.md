@@ -1,19 +1,70 @@
-# React + Vite
+PROJECT NAME : Dev Stack. (named: devpractweb in github)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive developer technology stack explorer. Explore different technologies, view their details, and build your own personalized development stack.
 
-Currently, two official plugins are available:
+Technologies Used: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+React.js
+JavaScript
+HTML5
+CSS3
+React Toastify
+JSON 
+Vite
 
-## React Compiler
+Features :
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+1. Explore Technologies
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+Look through the categories of these frontend, backend, database, and development tools and their respective descriptions, difficulties, ratings and more.
 
-## Expanding the ESLint configuration
+2.  Build Your Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Add technologies to your personal stack, remove individual technologies or empty your stack.
+
+3.  Responsive Design
+
+The website is responsive, features mobile navigation menu and the layout is intuitive and responsive across all devices such as desktop, tablet, mobile.
+
+
+
+
+
+ANSWERS:
+1. 
+
+JSX allows us to write HTML code within our JS code.
+Simplifies the writing and understanding of React components.
+
+2. 
+
+Props are info sent from a parent component into its child.
+State is data that is outlined in some kind of component that can evolve over time.
+
+3. 
+
+useState is used for storing and updating the changing data in a component.
+I used it in saving the technologies which were selected in App.jsx under selectedStack.
+
+4. 
+
+Side effects that are typically used to fetch data from an external source.
+Here, JSON data is loaded with a Promise instead of useEffect in this project.
+
+5. 
+
+Each object in a list has a unique key that allows React to know which object it corresponds to.
+"if the list changes" allows React to add/remove efficiently the appropriate items.
+
+6. 
+
+Conditional rendering is to present different User Interfaces based on some condition.
+For instance, if there's no stack selected, I display "Your stack is empty".
+
+7. 
+
+A parent component passes something to a child component and the child component  uses this to pull the data from the parent.
+To send something back, the child component  can simply call a function provided by the parent component  via the props.
+
+
+
